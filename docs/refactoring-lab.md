@@ -24,6 +24,22 @@ public class Calculator {
 }
 ```
 
+**After refactoring**
+
+```java
+public class Calculator {
+    public double calculateSumToProductRatio(double firstOperand, double secondOperand) {
+        double sum = firstOperand + secondOperand;
+        double product = firstOperand * secondOperand;
+        return sum / product;
+    }
+
+    public void printResult(double ratio) {
+        System.out.println("Result: " + ratio);
+    }
+}
+```
+
 ### 2. Extract Method Refactoring Example in Java
 
 **Supporting classes (to be used in the example below)**
